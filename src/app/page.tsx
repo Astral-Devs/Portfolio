@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../components/navbar';
-import Home from './home/page';
+import ProjectCard from '@/components/projectCard';
 
 
-export default function Page() {
+export default function App() {
   return (
-    <div>
-    <Navbar />
-    <Home />
+    <div className='h-screen w-full bg-white'>
+      <Navbar />
+      <div></div>
     </div>
   );
 };
