@@ -1,25 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
   return (
-    <nav className="bg-gradient-to-br from-blue-950 to-indigo-900 text-white flex justify-end font-sans">
+    <nav className="bg-gradient-to-br from-blue-950 to-indigo-900 text-white text-lg flex justify-end font-sans">
       <ul className="flex">
-        <li className="text-lg p-3 px-4 hover:bg-indigo-700">
-          <Link href="/">Home</Link>
+        <li className="py-3 hover:bg-indigo-700">
+          <Link href="/" className=" p-3 px-4">Home</Link>
         </li>
-        <li className="text-lg p-3 px-4 hover:bg-purple-700">
-          <Link href="/projects">Projects</Link>
+        <li className="py-3 hover:bg-indigo-700">
+          <Link href="/projects" className='p-3 px-4'>Projects</Link>
         </li>
-        <li className="text-lg p-3 px-4 hover:bg-indigo-700">
-          <Link href="/blog">Blog</Link>
+        <li className=" py-3 hover:bg-indigo-700">
+          <Link href="/blog" className='p-3 px-4'>Blogs</Link>
         </li>
-        <li className="text-lg p-3 px-4 hover:bg-indigo-700">
-          <Link href="/contact">Contact</Link>
+        <li className="py-3 hover:bg-indigo-700">
+          <Link href="/contact" className='p-3 px-4'>Contact</Link>
         </li>
       </ul>
     </nav>
   );
 };
 
-export default Navbar;

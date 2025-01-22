@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flex w-3/5 bg-white shadow-lg rounded-md overflow-hidden mb-8  p-[3px] hover:bg-gradient-to-br hover:from-pink-500 hover:via-purple-500 hover:to-blue-500">
+    <div className="sm:flex w-9/12 bg-white shadow-lg rounded-md overflow-hidden mb-8  p-[3px] hover:bg-gradient-to-br hover:from-pink-500 hover:via-purple-500 hover:to-blue-500">
       <div className="p-[3px] flex-1 bg-gray-200 rounded-l-md flex justify-center items-center ">
         <img src={project.image} alt={project.title} className="max-w-full max-h-full" />
       </div>
