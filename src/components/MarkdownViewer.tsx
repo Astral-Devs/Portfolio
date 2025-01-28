@@ -14,7 +14,7 @@ export default function MarkdownViewer({ blog }: MarkdownViewerProps){
     fetch(`${blog}.md`)
       .then((response) => response.text())
       .then((text) => setMarkdown(text));
-  }, []);
+  });
 
   return (
     <div className="prose max-w-none mx-auto p-4">

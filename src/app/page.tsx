@@ -5,7 +5,6 @@ import Navbar from '@/components/navbar';
 import BlogPage from './pages/BlogPage';
 import ProjectPage from './pages/ProjectPage';
 import MarkdownPage from '@/components/MarkdownPage';
-import MarkdownViewer from '@/components/MarkdownViewer';
 
 export default function App() {
   return (
