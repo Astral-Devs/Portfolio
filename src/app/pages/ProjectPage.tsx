@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectCard from '@/components/projectCard';
-import Navbar from '@/components/navbar';
 
 const projects = [
   {
@@ -12,12 +11,20 @@ const projects = [
     source: "#",
     demo: "#",
   },
+  {
+    title: "Random Project Title",
+    image: "images.png",
+    technologies: ["rust.png", "pytorch.png", "C.png"],
+    description:
+      "This is a test card to show that this card component works. ",
+    source: "#",
+    demo: "#",
+  },
 ];
 
-export default function Projects() {
+export default function ProjectPage() {
   return (
     <div className="w-full h-screen bg-white">
-      <Navbar/>
 
       <h2 className="text-5xl text-center font-serif text-gray-800 mb-8 mt-16">Projects</h2>
 

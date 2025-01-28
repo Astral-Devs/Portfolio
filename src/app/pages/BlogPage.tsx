@@ -1,5 +1,5 @@
+
 import React from 'react';
-import Navbar from '@/components/navbar';
 import BlogCard from '@/components/blogCard'; 
 
 const blogs = [
@@ -7,15 +7,15 @@ const blogs = [
     title: 'Random Blog Title',
     date: '1-21-2025',
     des: 'This is a test card to show that this card component works. This is a test card to show that this card component works. This is a test card to show that this card component works. ',
-    source: '#',
+    source: 'README',
   },
 ];
 
-export default function Blog() {
+export default function BlogPage() {
   return (
-    <div className="h-screen bg-white">
-      <Navbar/>
-      <div className=' grid grid-cols-1 place-items-center '>
+    <div className="bg-white h-full">
+
+      <div className=' grid grid-cols-1 place-items-center '>       
         {blogs.map((blog, index) => (
             <BlogCard key={index} blog={blog} />
           ))}

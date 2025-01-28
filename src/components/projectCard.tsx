@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="sm:flex w-9/12 bg-white shadow-lg rounded-md overflow-hidden mb-8  p-[3px] hover:bg-gradient-to-br hover:from-pink-500 hover:via-purple-500 hover:to-blue-500">
+    <div className="sm:flex w-9/12 bg-white shadow-lg rounded-md overflow-hidden mb-8  p-[3px] hover:bg-gradient-to-br hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 transition hover:scale-105">
       <div className="p-[3px] flex-1 bg-gray-200 rounded-l-md flex justify-center items-center ">
         <img src={project.image} alt={project.title} className="max-w-full max-h-full" />
       </div>
@@ -22,7 +22,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <h1 className="text-2xl font-bold text-gray-800 mb-4">{project.title}</h1>
         <div className="flex items-center justify-center gap-3 mb-4">
           {project.technologies.map((tech, index) => (
-            <img key={index} src={tech} alt={tech} className="h-10 mr-2" />
+            <img key={index} src={`tech/${tech}`} alt={tech} className="h-10 mr-2" />
           ))}
         </div>
 
@@ -44,7 +44,7 @@ function ProjectCard({ project }: ProjectCardProps) {
           >
             View Source
 
-            <img src="github.png" alt="GitHub" className="w-5 h-5 ml-2 mt-1" />
+            <img src="/tech/github.png" alt="GitHub" className="w-5 h-5 ml-2 mt-1" />
           </a>)}
         </div>
       </div>
