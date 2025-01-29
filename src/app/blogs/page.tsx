@@ -1,6 +1,6 @@
-
 import React from 'react';
 import BlogCard from '@/components/blogCard'; 
+import Navbar from '@/components/navbar';
 
 const blogs = [
   {
@@ -14,7 +14,7 @@ const blogs = [
 export default function BlogPage() {
   return (
     <div className="bg-white h-full">
-
+      <Navbar/>
       <div className=' grid grid-cols-1 place-items-center '>       
         {blogs.map((blog, index) => (
             <BlogCard key={index} blog={blog} />
